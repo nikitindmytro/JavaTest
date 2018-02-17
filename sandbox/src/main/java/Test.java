@@ -5,12 +5,11 @@ public class Test {
 
 		System.out.println("Hello, World!");
 
-		double a = 5;
-        System.out.println("Площадь квадрата, состороной " + a + " = " + area(a));
+		Square a = new Square(5);
+		System.out.println("Площадь квадрата, состороной " + a.l + " = " + a.area());
 
-        double x = 3;
-        double y = 6;
-        System.out.println("Площадь прямоугольника, со сторонами " + x + " и " + y + " = " + area(x,y));
+		Rectangle x = new Rectangle(3,6);
+        System.out.println("Площадь прямоугольника, со сторонами " + x.l + " и " + x.w + " = " + x.area());
 	}
 
 	public static double area(double a){
